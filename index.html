@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@300&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="./img/images/clouds.png" type="image/x-icon">
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="logo">
+            <img src="/img/images/white sun.png" alt="logo" id="logo">
+        </div>
+        <h1 class="head">Weather</h1>
+    </div>
+
+    <button id="location-button">Current Location</button>
+
+    <h3 id="greetings">
+
+    </h3>
+
+    <div class="main-div">
+
+        <div class="search">
+            <input type="text" placeholder="Enter a City Name">
+            <button><img src="./img/images/search.png" alt="searchbtn"></button>
+            <button id="speakButton">Speak</button>
+        </div>
+<div class="temp-details">
+    <div class="primary-div">
+        <h1 class="card-text text-center temp" >32°c</h1>
+        <p class="card-text text-center city1">New York</p>
+    </div>
+    <div class="secondary-div">
+        <img src="./img/images/clear.png" class="card-img-top weather-icon" alt="..." id="img1">
+    </div>
+    </div>
+<div class="vertical-line"></div>
+<div class="multi-div">
+    <div class="humidity-div">
+        <h3>Humidity</h3>
+<div class="partition">
+        <div class="images1">
+            <img src="./img/images/humidity.png" class="card-img-top " alt="..." id="img2">
+        </div>
+        <div>
+             <p class="card-text text-center humidity">100%</p>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="windspeed-div">
+        <h3>Wind Speed</h3>
+        <div class="partition">
+        <div class="images2">
+            <img src="./img/images/wind.png" class="card-img-top " alt="..." id="img3">
+        </div>
+        <div>
+              <p class="card-text text-center wind">1.85 km/h</p>
+        </div>
+    </div>
+    </div>
+    <div class="Upcoming-info">
+        Upcoming Day Weather
+    </div>
+    <div id="forecastWeather">
+       
+        </div>
+
+    </div>
+</div>
+<!-- <h3 class="display-date">Hi</h3> -->
+</body>
+
+</html>
