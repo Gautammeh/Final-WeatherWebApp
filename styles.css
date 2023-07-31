@@ -12,12 +12,6 @@ html{
 
 body{
   width: 100%;
-    /* height: 100vh;  */
-    /* height: 100%; */
-    /* border: 1px solid red; */
-    
-  /* position: relative; */
-  /* width:210vh */
  
 
 }
@@ -37,9 +31,6 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: sticky;
-  top: 0; */
-  /* bottom: 0; */
 }
 
 #logo{
@@ -63,7 +54,7 @@ body{
 }
 .logo{
   /* border: 1px solid red; */
-  /* display: inline-block; */
+
   width: 21.5rem;
   display: flex;
   justify-content: space-around;
@@ -73,10 +64,7 @@ body{
 
 .head{
 
-  /* display: inline-block; */
   color: white;
-  /* position: absolute; */
-  /* top: 15px; */
   cursor: pointer;
   font-size: 3.2rem;
 }
@@ -85,22 +73,13 @@ body{
 #greetings{
   color: white;
   font-size: 3rem;
-  /* position: absolute;
-  top: 0px;
-  left: 40%; */
   text-transform: capitalize;
 }
 
 
 #location-button {
-  /* position: absolute;
-  top: 0;
-  right: 5px;
-  margin-top: 10px; */
   width: 20rem;
   height: 4rem;
-  /* text-align: center; */
-  /* padding: 10px 10px; */
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -119,8 +98,6 @@ body{
 /* border:1px solid red; */
 width:50%;
 margin: auto;
-/* position: relative; */
-/* top:5rem; */
 margin-top: 5rem;
 margin-bottom: 15rem;
 
@@ -158,18 +135,8 @@ font-size: 1.5rem;
 }
 
 .temp-details{
-  /* position: relative; */
-  /* left:38%; */
-  /* left:30px; */
-  /* top: 240px; */
-  /* border: 1px solid white; */
-  /* width: 36.5rem; */
-  /* display: inline-block; */
-  /* height: 3; */
   display: inline-flex; 
   align-items: center;
-  /* flex-direction: column; */
-  /* justify-content:flex-end; */
   padding: .5rem;
   position: relative;
 
@@ -182,18 +149,12 @@ font-size: 1.5rem;
 .temp{
   display: inline-block;
   /* border: 2px solid white; */
-  /* height: 85px; */
   color: white;
-  /* position: absolute; */
-  /* top: 500px; */
-  /* left: 0; */
   font-size: 8rem;
 }
 
   #img1{
     width: 14rem;
-    /* height: 14rem; */
-    /* animation: rotate2 15s ease-in-out infinite; */
 
 }
 @keyframes rotate2 {
@@ -208,28 +169,16 @@ font-size: 1.5rem;
   }
 
 .city1{
-    /* border: 2px solid white; */
-  /* width: 250px; */
   display: inline-block;
-  /* font-size: 30px; */
   color: white;
-  /* position: absolute; */
-  /* top: 600px; */
-  /* left: 0; */
   font-size: 4.3rem;
 
   
 }
 
 
-/* .secondary-div{
-  width: 150px;
-  height: 50px;
-  margin: 20px 5px 0 0;
-} */
-
 .vertical-line{
-  height: 20rem;
+  height: 18rem;
   width: 1rem;
   border-left: 3px solid rgb(169, 169, 169);
   position: absolute;
@@ -240,20 +189,19 @@ font-size: 1.5rem;
   /* border: 1px solid red; */
   
   width: 100%;
-  /* top: 0; */
-  /* bottom: -20px; */
+ 
   bottom: 0vh;
-  /* height: 210px; */
   background-color: #4E4E4E;
-  /* display: none; */
   display: flex;
-  padding: 2rem 0;
+  padding: 1.1rem 1rem;
 }
-
+.left-div{
+  /* border: 1px solid red; */
+  /* height: 100%; */
+}
 .right-div{
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   width: 100%;
   
   
@@ -279,14 +227,13 @@ font-size: 1.5rem;
   text-align: center;
   /* border: 1px solid white; */
   width: 100%;
-  /* display: block; */
   color: white;
 }
 .windspeed-div h3{
   text-align: center;
   /* border: 1px solid white; */
   width: 100%;
-  /* display: block; */
+  
   color: white;
 }
 
@@ -297,25 +244,27 @@ font-size: 1.5rem;
   display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
-  /* display: grid; */
+  
   font-size: 2rem;
   margin-left: 3rem;
-  margin-top: .8rem;
-  height: 45%;
+  
+  height: 10rem;
  
 
 }
-
+.windspeed-div{
+  margin-top: .8rem;  
+}
 .humidity, .wind{
   width: 50%;
-  /* display: inline; */
+  
   /* border: 1px solid red; */
 }
 
 .images1{
   /* border: 1px solid red; */
   display: inline-block;
-  /* width: 50%; */
+  
   
 }
 
@@ -332,11 +281,9 @@ margin-top: .5rem;
 
 #forecastWeather{
   /* border:2px solid white; */
-  /* margin:1.3rem auto; */
-  justify-content: space-around;
- /* width: 75%; */
+  justify-content: space-evenly;
  display: flex;
- margin-top: 1.5rem;
+ margin-top: 3rem;
  flex-wrap: wrap;
  gap: 1rem;
 
@@ -369,53 +316,3 @@ div.weather-card1{
 
 }
 
-
-
-@media only screen and (max-width:595px){
-  html{
-    font-size: 45%;
-  }
-
-  .vertical-line{
-    display: none;
-  }
-
-  .search{
-    width: 70%;
-    top: 15rem;
-  }
-
-  #location-button{
-    position: absolute;
-    top: 65rem;
-    /* margin: 0 auto; */
-    /* left: 33%; */
-    left: 29rem;
-    /* left: 50; */
-
-  }
-  .temp-details{
-    bottom: 52%;
-    left: 29%;
-  }
-  .humidity-div{
-    /* position: absolute; */
-    bottom: 40rem;
-    /* flex-wrap: nowrap; */
-    /* left: 5%; */
-    right: 50%;
-    margin: 0;
-
-  }
-
-  .windspeed-div{
-    /* position: absolute; */
-    bottom: 40rem;
-    right: 20%;
-  }
-
-
-
-
-
-}
