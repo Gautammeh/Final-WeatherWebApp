@@ -7,6 +7,7 @@ const searchBtn = document.querySelector(".search button");
 const weatherIcon =document.querySelector("#img1")
 const today = new Date()
 const curHr = today.getHours()
+const bgChannge = document.querySelector(".background");
 
 if (curHr < 12) {
   document.getElementById("greetings").innerHTML = 'good morning'}
@@ -40,19 +41,19 @@ document.getElementById('speakButton').style.display = "none";
     
         if(data.weather[0].main=="Clouds"){
             weatherIcon.src = "./img/images/clouds.png";
-            document.body.style.backgroundImage = "url('./img/images/CloudBgChange.jpg')";
-            document.body.style.backgroundPosition = "top";
-            document.body.style.backgroundRepeat = "no-repeat";
-            document.body.style.backgroundSize = "fill";
+            bgChannge.style.backgroundImage = "url('./img/images/CloudBgChange.jpg')";
+            bgChannge.style.backgroundPosition = "top";
+            bgChannge.style.backgroundRepeat = "no-repeat";
+            bgChannge.style.backgroundSize = "fill";
 
       
           }  
         else if(data.weather[0].main=="Clear"){
             weatherIcon.src = "./img/images/clear.png";
-            document.body.style.backgroundImage = "url('./img/images/ClearBgChange.jpg')";
-            document.body.style.backgroundPosition = "top";
-            document.body.style.backgroundRepeat = "no-repeat";
-            document.body.style.backgroundSize = "fill";
+            bgChannge.style.backgroundImage = "url('./img/images/ClearBgChange.jpg')";
+            bgChannge.style.backgroundPosition = "top";
+            bgChannge.style.backgroundRepeat = "no-repeat";
+            bgChannge.style.backgroundSize = "fill";
             // Animation = "rotate 2s linear 1s infinite";
     
 
@@ -61,36 +62,36 @@ document.getElementById('speakButton').style.display = "none";
         }
         else if(data.weather[0].main=="Rain"){
             weatherIcon.src = "./img/images/rain.png";
-            document.body.style.backgroundImage = "url('./img/images/rain bg change.jpeg')";
-            document.body.style.backgroundPosition = "top";
-            document.body.style.backgroundRepeat = "no-repeat";
-            document.body.style.backgroundSize = "fill";
-            document.body.style.backdropFilter = "blur(1px)"
+            bgChannge.style.backgroundImage = "url('./img/images/rain bg change.jpeg')";
+            bgChannge.style.backgroundPosition = "top";
+            bgChannge.style.backgroundRepeat = "no-repeat";
+            bgChannge.style.backgroundSize = "fill";
+            bgChannge.style.backdropFilter = "blur(1px)"
 
         
         }
         else if(data.weather[0].main=="Drizzle"){
             weatherIcon.src = "./img/images/drizzle.png";
-            document.body.style.backgroundImage = "url('./img/images/DrizzleBgChange.png')";
-            document.body.style.backgroundPosition = "top";
-            document.body.style.backgroundRepeat = "no-repeat";
-            document.body.style.backgroundSize = "fill";
+            bgChannge.style.backgroundImage = "url('./img/images/DrizzleBgChange.png')";
+            bgChannge.style.backgroundPosition = "top";
+            bgChannge.style.backgroundRepeat = "no-repeat";
+            bgChannge.style.backgroundSize = "fill";
            
         }
         else if(data.weather[0].main=="Mist"){
             weatherIcon.src = "./img/images/mist.png";
-            document.body.style.backgroundImage = "url('./img/images/MistBgChange.jpg')";
-            document.body.style.backgroundPosition = "top";
-            document.body.style.backgroundRepeat = "no-repeat";
-            document.body.style.backgroundSize = "fill";
+            bgChannge.style.backgroundImage = "url('./img/images/MistBgChange.jpg')";
+            bgChannge.style.backgroundPosition = "top";
+            bgChannge.style.backgroundRepeat = "no-repeat";
+            bgChannge.style.backgroundSize = "fill";
             
         }
         else if(data.weather[0].main=="Haze"){
             weatherIcon.src = "./img/images/white sun.png";
-            document.body.style.backgroundImage = "url('./img/images/HazeBgChange.jpg')";
-            document.body.style.backgroundPosition = "top";
-            document.body.style.backgroundRepeat = "no-repeat";
-            document.body.style.backgroundSize = "fill";
+            bgChannge.style.backgroundImage = "url('./img/images/HazeBgChange.jpg')";
+            bgChannge.style.backgroundPosition = "top";
+            bgChannge.style.backgroundRepeat = "no-repeat";
+            bgChannge.style.backgroundSize = "fill";
             
         }
         fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=358953dea09afa93b5018f22234b0522`)
