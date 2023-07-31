@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+html{
+  font-size: 62.5%;
+}
+
+body{
+  width: 100%;
+    height: 100vh;
+    /* height: 100%; */
+    /* border: 1px solid red; */
+    background-image: url("./img/images/figma\ back.jpeg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  backdrop-filter: blur(1px);
+  /* position: relative; */
+  /* width:210vh */
+ 
+
+}
+
+.hero{
+  /* border: 1px solid red; */
+  border-bottom: 1px solid rgb(188, 183, 183);
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: sticky;
+  top: 0; */
+  /* bottom: 0; */
+}
+
+#logo{
+  /* border: 1px solid red; */
+  width: 6.5rem;
+  height: 98%;
+  animation: rotate 2s linear 1s infinite;
+  
+  
+  
+}
+
+@keyframes rotate{
+0%{
+  transform: rotate(0deg);
+}
+100%{
+  transform: rotate(180deg);
+}
+  
+}
+.logo{
+  /* border: 1px solid red; */
+  /* display: inline-block; */
+  width: 21.5rem;
+  display: flex;
+  justify-content: space-around;
+  height: 95%;
+  align-items: center;
+}
+
+.head{
+
+  /* display: inline-block; */
+  color: white;
+  /* position: absolute; */
+  /* top: 15px; */
+  cursor: pointer;
+  font-size: 3.2rem;
+}
+
+
+#greetings{
+  color: white;
+  font-size: 3rem;
+  /* position: absolute;
+  top: 0px;
+  left: 40%; */
+  text-transform: capitalize;
+}
+
+
+#location-button {
+  /* position: absolute;
+  top: 0;
+  right: 5px;
+  margin-top: 10px; */
+  width: 20rem;
+  height: 4rem;
+  /* text-align: center; */
+  /* padding: 10px 10px; */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size:1.8rem;
+  border-radius: 4.5rem;
+  font-weight:700;
+}
+#location-button:hover{
+  background-color: antiquewhite;
+  color: black;
+}
+
+
+.search{
+/* border:1px solid red; */
+width:50%;
+margin: auto;
+position: relative;
+top:5rem;
+display: flex;
+justify-content: space-around;
+}
+
+.search input{
+width: 85%;
+height: 5rem;
+border-radius: 8rem;
+text-indent: 3%;
+outline: 0;
+border: 1px solid black;
+font-size: 1.5rem;
+
+
+
+}
+
+.search button{
+   border: 0;
+   outline: 0;
+   background: #ffff;
+   border-radius: 50%;
+   width: 5rem;
+   height: 5rem;
+   cursor: pointer;
+   font-size: 1.3rem;
+   
+}
+
+.search button img{
+   width: 2rem;
+}
+
+.temp-details{
+  /* position: relative; */
+  /* left:38%; */
+  /* left:30px; */
+  /* top: 240px; */
+  /* border: 1px solid white; */
+  width: 36.5rem;
+  /* height: 3; */
+  display: flex;
+  align-items: center;
+  /* justify-content:flex-end; */
+  padding: .5rem;
+  position: absolute;
+  bottom: 29%;
+
+}
+
+.temp{
+  display: inline-block;
+  /* border: 2px solid white; */
+  /* height: 85px; */
+  color: white;
+  /* position: absolute; */
+  /* top: 500px; */
+  /* left: 0; */
+  font-size: 8rem;
+}
+
+  #img1{
+    width: 14rem;
+    height: 14rem;
+    /* animation: rotate2 15s ease-in-out infinite; */
+
+}
+@keyframes rotate2 {
+  
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(380deg);
+  }
+    
+  }
+
+.city1{
+    /* border: 2px solid white; */
+  /* width: 250px; */
+  display: inline-block;
+  /* font-size: 30px; */
+  color: white;
+  /* position: absolute; */
+  /* top: 600px; */
+  /* left: 0; */
+  font-size: 4.3rem;
+
+  
+}
+
+
+/* .secondary-div{
+  width: 150px;
+  height: 50px;
+  margin: 20px 5px 0 0;
+} */
+
+.vertical-line{
+  height: 20rem;
+  width: 1rem;
+  border-left: 3px solid rgb(169, 169, 169);
+  position: relative;
+  left: 37rem;
+  top:21rem;
+}
+.multi-div{
+  /* border: 1px solid red; */
+  position:fixed;
+  width: 100%;
+  /* top: 0; */
+  /* bottom: -20px; */
+  bottom: 0vh;
+  height: 210px;
+  background-color: #4E4E4E;
+  /* display: none; */
+}
+
+#img2{
+  width: 5rem;
+  /* border: 1px solid red; */
+ 
+} 
+
+#img3{
+  width: 4.8rem;
+}
+.humidity-div h3{
+  text-align: center;
+  /* border: 1px solid white; */
+  width: 100%;
+  /* display: block; */
+  color: white;
+}
+.windspeed-div h3{
+  text-align: center;
+  /* border: 1px solid white; */
+  width: 100%;
+  /* display: block; */
+  color: white;
+}
+
+.humidity-div , .windspeed-div  {
+  border: 1px solid rgb(145, 145, 145);
+  border-radius: .6rem;
+  width: 23rem;
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+  /* display: grid; */
+  font-size: 2rem;
+  margin-left: 3rem;
+  margin-top: .8rem;
+  height: 45%;
+ 
+
+}
+
+.humidity, .wind{
+  width: 50%;
+  /* display: inline; */
+  /* border: 1px solid red; */
+}
+
+.images1{
+  /* border: 1px solid red; */
+  display: inline-block;
+  /* width: 50%; */
+  
+}
+
+
+.partition{
+margin-top: .5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+#forecastWeather{
+  /* border:2px solid white; */
+  margin:1.3rem auto;
+  justify-content: space-around;
+ width: 75%;
+ display: flex;
+ /* text-align: center; */
+ position: absolute;
+ bottom: 0;
+ right: 6rem;
+}
+div.weather-card{
+ 
+ background-color: rgb(255, 255, 255);
+   width: 15rem;
+   height: 13rem;  
+   display: flex;
+   flex-direction: column;
+   border-radius: 1.3rem;
+   align-items: center;
+   justify-content: center;
+   color: black;
+   font-size: 1.8rem;
+   font-weight: bold;
+}
+
+div.weather-card1{
+ font-size: larger;
+ font-weight: 700;
+}
+
+.display-date{
+  color: white;
+  position: absolute;
+  top: 0;
+  left:35%;
+
+}
+
+.Upcoming-info{
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 48%;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width:595px){
+  html{
+    font-size: 45%;
+  }
+
+  .vertical-line{
+    display: none;
+  }
+
+  .search{
+    width: 70%;
+    top: 15rem;
+  }
+
+  #location-button{
+    position: absolute;
+    top: 65rem;
+    /* margin: 0 auto; */
+    /* left: 33%; */
+    left: 29rem;
+    /* left: 50; */
+
+  }
+  .temp-details{
+    bottom: 52%;
+    left: 29%;
+  }
+  .humidity-div{
+    position: absolute;
+    bottom: 40rem;
+    /* flex-wrap: nowrap; */
+    /* left: 5%; */
+    right: 50%;
+    margin: 0;
+
+  }
+
+  .windspeed-div{
+    position: absolute;
+    bottom: 40rem;
+    right: 20%;
+  }
+
+
+
+
+
+}
