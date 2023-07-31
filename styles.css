@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    border: 1px solid red;
 
 }
 html{
@@ -14,18 +15,20 @@ body{
     height: 100vh;
     /* height: 100%; */
     /* border: 1px solid red; */
-    background-image: url("./img/images/figma\ back.jpeg");
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  backdrop-filter: blur(1px);
+    
   /* position: relative; */
   /* width:210vh */
  
 
 }
-
+.background{
+  background-image: url("./img/images/figma\ back.jpeg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  backdrop-filter: blur(1px);
+}
 .hero{
   /* border: 1px solid red; */
   border-bottom: 1px solid rgb(188, 183, 183);
@@ -116,8 +119,11 @@ body{
 /* border:1px solid red; */
 width:50%;
 margin: auto;
-position: relative;
-top:5rem;
+/* position: relative; */
+/* top:5rem; */
+margin-top: 5rem;
+margin-bottom: 16rem;
+
 display: flex;
 justify-content: space-around;
 }
@@ -157,15 +163,20 @@ font-size: 1.5rem;
   /* left:30px; */
   /* top: 240px; */
   /* border: 1px solid white; */
-  width: 36.5rem;
+  /* width: 36.5rem; */
+  /* display: inline-block; */
   /* height: 3; */
-  display: flex;
+  display: inline-flex; 
   align-items: center;
+  /* flex-direction: column; */
   /* justify-content:flex-end; */
   padding: .5rem;
-  position: absolute;
-  bottom: 29%;
+  position: relative;
 
+}
+.primary-div{
+  display: flex;
+  flex-direction: column;
 }
 
 .temp{
@@ -181,7 +192,7 @@ font-size: 1.5rem;
 
   #img1{
     width: 14rem;
-    height: 14rem;
+    /* height: 14rem; */
     /* animation: rotate2 15s ease-in-out infinite; */
 
 }
@@ -221,9 +232,9 @@ font-size: 1.5rem;
   height: 20rem;
   width: 1rem;
   border-left: 3px solid rgb(169, 169, 169);
-  position: relative;
-  left: 37rem;
-  top:21rem;
+  position: absolute;
+  left: 36rem;
+  /* top:21rem; */
 }
 .multi-div{
   /* border: 1px solid red; */
@@ -376,7 +387,7 @@ div.weather-card1{
     left: 29%;
   }
   .humidity-div{
-    position: absolute;
+    /* position: absolute; */
     bottom: 40rem;
     /* flex-wrap: nowrap; */
     /* left: 5%; */
@@ -386,7 +397,7 @@ div.weather-card1{
   }
 
   .windspeed-div{
-    position: absolute;
+    /* position: absolute; */
     bottom: 40rem;
     right: 20%;
   }
