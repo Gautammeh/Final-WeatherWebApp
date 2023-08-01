@@ -41,8 +41,8 @@ document.getElementById('speakButton').style.display = "none";
     
         if(data.weather[0].main=="Clouds"){
             weatherIcon.src = "./img/images/clouds.png";
-            bgChannge.style.backgroundImage = "url('./img/images/CloudBgChange.jpg')";
-            bgChannge.style.backgroundPosition = "top";
+            bgChannge.style.backgroundImage = "url('./img/images/CloudBgChange.webp')";
+            bgChannge.style.backgroundPosition = "center";
             bgChannge.style.backgroundRepeat = "no-repeat";
             bgChannge.style.backgroundSize = "fill";
 
@@ -50,8 +50,8 @@ document.getElementById('speakButton').style.display = "none";
           }  
         else if(data.weather[0].main=="Clear"){
             weatherIcon.src = "./img/images/clear.png";
-            bgChannge.style.backgroundImage = "url('./img/images/ClearBgChange.jpg')";
-            bgChannge.style.backgroundPosition = "top";
+            bgChannge.style.backgroundImage = "url('./img/images/ClearBgChange_1.webp')";
+            bgChannge.style.backgroundPosition = "center";
             bgChannge.style.backgroundRepeat = "no-repeat";
             bgChannge.style.backgroundSize = "fill";
             // Animation = "rotate 2s linear 1s infinite";
@@ -62,8 +62,8 @@ document.getElementById('speakButton').style.display = "none";
         }
         else if(data.weather[0].main=="Rain"){
             weatherIcon.src = "./img/images/rain.png";
-            bgChannge.style.backgroundImage = "url('./img/images/rain bg change.jpeg')";
-            bgChannge.style.backgroundPosition = "top";
+            bgChannge.style.backgroundImage = "url('./img/images/RainBgchange.webp')";
+            bgChannge.style.backgroundPosition = "center";
             bgChannge.style.backgroundRepeat = "no-repeat";
             bgChannge.style.backgroundSize = "fill";
             bgChannge.style.backdropFilter = "blur(1px)"
@@ -72,16 +72,16 @@ document.getElementById('speakButton').style.display = "none";
         }
         else if(data.weather[0].main=="Drizzle"){
             weatherIcon.src = "./img/images/drizzle.png";
-            bgChannge.style.backgroundImage = "url('./img/images/DrizzleBgChange.png')";
-            bgChannge.style.backgroundPosition = "top";
+            bgChannge.style.backgroundImage = "url('./img/images/DrizzleBgChange.webp')";
+            bgChannge.style.backgroundPosition = "center";
             bgChannge.style.backgroundRepeat = "no-repeat";
             bgChannge.style.backgroundSize = "fill";
            
         }
         else if(data.weather[0].main=="Mist"){
             weatherIcon.src = "./img/images/mist.png";
-            bgChannge.style.backgroundImage = "url('./img/images/MistBgChange.jpg')";
-            bgChannge.style.backgroundPosition = "top";
+            bgChannge.style.backgroundImage = "url('./img/images/MistBgChange_2.webp')";
+            bgChannge.style.backgroundPosition = "center";
             bgChannge.style.backgroundRepeat = "no-repeat";
             bgChannge.style.backgroundSize = "fill";
             
@@ -89,7 +89,7 @@ document.getElementById('speakButton').style.display = "none";
         else if(data.weather[0].main=="Haze"){
             weatherIcon.src = "./img/images/white sun.png";
             bgChannge.style.backgroundImage = "url('./img/images/HazeBgChange.jpg')";
-            bgChannge.style.backgroundPosition = "top";
+            bgChannge.style.backgroundPosition = "center";
             bgChannge.style.backgroundRepeat = "no-repeat";
             bgChannge.style.backgroundSize = "fill";
             
@@ -126,25 +126,13 @@ document.getElementById('speakButton').style.display = "none";
 }
 document.getElementById('speakButton').style.display = "none";
 
-// document.getElementById('speakButton').addEventListener('click', function() {
-//   var text = document.getElementById('temp').innerText;
-//   // var text = document.getElementById('temp').innerText;
-//   console.log("Hi")
-//   speak(text);
-// });
 
-// function speak(text) {
-//   var speechSynthesis = window.speechSynthesis;
-//   var utterance = new SpeechSynthesisUtterance(text);
-//   speechSynthesis.speak(utterance);
-// }
 document.getElementById('speakButton').addEventListener('click', function() {
-  var line = "The Temperature of "+searchBox.value+"is";
-  var text = document.querySelector('.temp').innerText;
-  // var text = document.getElementById('temp').innerText;
-  console.log("Hi")
-  speak(line);
+  var text = document.querySelector('#greetings').innerText;
+  var line = "The Temperature of "+searchBox.value+ "is" + document.querySelector('.temp').innerText;
+
   speak(text);
+  speak(line);
 });
 
 function speak(line) {
@@ -182,23 +170,6 @@ searchBtn.addEventListener("click" , ()=>{
 
 
 )
-
-// document.getElementById('speakButton').addEventListener('click', function() {
-//   // var tempSpeak = "The Temperature of" +document.querySelectorAll(".city1")[0].innerHTML+ "is";
-//   var text = document.getElementById('temp').value;
-//   // console.log("Hi")
-//   // speak(tempSpeak,text);
-//   speak(text);
-// });
-
-// function speak(tempSpeak) {
-//   var speechSynthesis = window.speechSynthesis;
-//   var tempsp = new SpeechSynthesisUtterance(tempSpeak);
-//   // var utterance = new SpeechSynthesisUtterance(text);
-//   speechSynthesis.speak(tempsp);
-//   // speechSynthesis.speak(utterance);
-// }
-
 
 
 document.getElementById('location-button').addEventListener('click', getCurrentLocationWeather);

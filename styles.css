@@ -16,7 +16,7 @@ body{
 
 }
 .background{
-  background-image: url("./img/images/figma\ back.jpeg");
+  background-image: url("./img/images/figma-back.webp");
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
@@ -135,6 +135,7 @@ font-size: 1.5rem;
 }
 
 .temp-details{
+  
   display: inline-flex; 
   align-items: center;
   padding: .5rem;
@@ -171,7 +172,7 @@ font-size: 1.5rem;
 .city1{
   display: inline-block;
   color: white;
-  font-size: 4.3rem;
+  font-size: 4rem;
 
   
 }
@@ -193,7 +194,7 @@ font-size: 1.5rem;
   bottom: 0vh;
   background-color: #4E4E4E;
   display: flex;
-  padding: 1.25rem 1rem;
+  padding: 1.4rem 1rem;
 }
 .left-div{
   /* border: 1px solid red; */
