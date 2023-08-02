@@ -326,9 +326,9 @@ div.weather-card1{
   }
 
   #location-button{
+    width: 100%;
     position: absolute;
     top: 56rem;
-     margin-left: 30%;
   }
 
   .search{
