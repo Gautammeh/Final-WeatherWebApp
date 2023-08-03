@@ -100,7 +100,6 @@ width:50%;
 margin: auto;
 margin-top: 5rem;
 margin-bottom: 15rem;
-
 display: flex;
 justify-content: space-around;
 }
@@ -402,3 +401,13 @@ div.weather-card1{
    }
 
 }
+
+/* marquee{
+  border: 1px solid red;
+  width:"60%";
+   direction:"left";
+    height:"100px";
+    
+    color: white;
+
+} */
