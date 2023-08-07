@@ -190,7 +190,7 @@ font-size: 1.5rem;
   
   width: 100%;
  
-  bottom: 0vh;
+  /* bottom: 0vh; */
   background-color: #4E4E4E;
   display: flex;
   padding: 1.4rem 1rem;
@@ -320,6 +320,9 @@ div.weather-card1{
   *{
     /* border: 1px solid red; */
   }
+  body{
+    height: 100%;
+  }
   html{
     font-size: 45%;
   }
@@ -361,6 +364,7 @@ div.weather-card1{
 
   .multi-div{
     display: block;
+    /* height: 100%; */
   }
 
   .left-div{
