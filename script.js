@@ -129,10 +129,12 @@ document.getElementById('speakButton').style.display = "none";
 
 document.getElementById('speakButton').addEventListener('click', function() {
   var text = document.querySelector('#greetings').innerText;
-  var line = "The Temperature of "+searchBox.value+ "is" + document.querySelector('.temp').innerText;
+  var line = "The Temperature of "+searchBox.value+ "is" ;
+  var detail =  document.querySelector('.temp').innerHTML;
 
   speak(text);
   speak(line);
+  speak(detail);
 });
 
 function speak(line) {
