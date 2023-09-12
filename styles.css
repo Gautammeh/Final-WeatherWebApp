@@ -413,3 +413,102 @@ div.weather-card{
 
 } */
 
+@media (min-width: 451px) and (max-width: 850px) {
+ 
+
+  *{
+    /* border: 1px solid red; */
+  }
+  body{
+    /* height: 100%; */
+  }
+  html{
+    font-size: 48%;
+  }
+  #logo{
+    /* border: 1px solid red; */
+    width: 6rem;
+    /* height: 96%;     */
+  }
+  .head{
+
+    
+    /* font-size: 3rem; */
+  }
+  
+  
+  
+  #greetings{
+    font-size: 3rem; 
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 7rem;
+    /* color: rgb(25, 0, 255); */
+  }
+  .multi-div{
+    /* position: relative;
+    bottom: 0; */
+    /* height: 100%; */
+  }
+  
+
+ 
+  .search{
+    width: 65%;
+    margin-bottom: 2rem;
+  }
+  .vertical-line{
+    display: none;
+  }
+  .temp-details{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* display: block; */
+    display: flex;
+
+  }
+  #img1{
+    margin-left: 0.5rem;
+  }
+  .background{
+    height: 71.3rem;
+  }
+
+  .left-div{
+    position: fixed;
+    /* top: 5rem; */
+    bottom: 44rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .humidity-div , .windspeed-div  {
+    margin-left: 0;
+    /* width: 20rem; */
+    border: none;
+  }
+  .windspeed-div{
+    margin-top: 0;
+  }
+  #forecastWeather{
+
+   flex-wrap: nowrap;
+   /* gap: 0; */
+   
+  
+  }
+  div.weather-card{
+ 
+    
+      width: 14rem;
+      height: 13rem;  
+      
+   }
+
+  
+}
+
