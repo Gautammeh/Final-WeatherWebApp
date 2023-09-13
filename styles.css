@@ -512,3 +512,29 @@ div.weather-card{
   
 }
 
+@media (min-width: 850px) and (max-width: 1080px){
+  .multi-div{
+    gap: 1rem;
+  }
+  #forecastWeather{
+    /* width: 90%; */
+    /* border: 1px solid wheat; */
+    /* justify-content: space-between; */
+    /* flex-wrap: nowrap; */
+    margin-top: 4.5rem;
+  }
+  div.weather-card{
+ 
+    
+    width: 10.5rem;
+    height: 11rem;  
+    
+ }
+ .humidity-div , .windspeed-div  {
+  margin-left: 0;
+  
+}
+
+
+}
+
