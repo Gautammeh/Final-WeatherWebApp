@@ -1,29 +1,27 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    /* border: 1px solid red; */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* border: 1px solid red; */
 }
-html{
+html {
   font-size: 62.5%;
 }
 
-body{
+body {
   width: 100%;
- 
-
+  background-color: #4e4e4e;
 }
-.background{
+.background {
   background-image: url("./img/images/figma-back.webp");
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   backdrop-filter: blur(1px);
 }
-.hero{
+.hero {
   /* border: 1px solid red; */
   border-bottom: 1px solid rgb(188, 183, 183);
   width: 100%;
@@ -33,26 +31,22 @@ body{
   align-items: center;
 }
 
-#logo{
+#logo {
   /* border: 1px solid red; */
   width: 6.5rem;
   height: 98%;
   animation: rotate 2s linear 1s infinite;
-  
-  
-  
 }
 
-@keyframes rotate{
-0%{
-  transform: rotate(0deg);
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
 }
-100%{
-  transform: rotate(180deg);
-}
-  
-}
-.logo{
+.logo {
   /* border: 1px solid red; */
 
   width: 21.5rem;
@@ -62,345 +56,353 @@ body{
   align-items: center;
 }
 
-.head{
-
+.head {
   color: white;
   cursor: pointer;
   font-size: 3.2rem;
 }
 
-
-#greetings{
+#greetings {
   color: white;
   font-size: 3rem;
   text-transform: capitalize;
 }
 
-
 #location-button {
   width: 20rem;
   height: 4rem;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   cursor: pointer;
-  font-size:1.8rem;
+  font-size: 1.8rem;
   border-radius: 4.5rem;
-  font-weight:700;
+  font-weight: 700;
 }
-#location-button:hover{
+#location-button:hover {
   background-color: antiquewhite;
   color: black;
 }
 
-
-.search{
-/* border:1px solid red; */
-width:50%;
-margin: auto;
-margin-top: 5rem;
-margin-bottom: 15rem;
-display: flex;
-justify-content: space-around;
+.search {
+  /* border:1px solid red; */
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 11.9rem;
+  display: flex;
+  justify-content: space-around;
 }
 
-.search input{
-width: 85%;
-height: 5rem;
-border-radius: 8rem;
-text-indent: 3%;
-outline: 0;
-border: 1px solid black;
-font-size: 1.5rem;
-
-
-
+.search input {
+  width: 85%;
+  height: 5rem;
+  border-radius: 8rem;
+  text-indent: 3%;
+  outline: 0;
+  border: 1px solid black;
+  font-size: 1.5rem;
 }
 
-.search button{
-   border: 0;
-   outline: 0;
-   background: #ffff;
-   border-radius: 50%;
-   width: 5rem;
-   height: 5rem;
-   cursor: pointer;
-   font-size: 1.3rem;
-   
+.search button {
+  border: 0;
+  outline: 0;
+  background: #ffff;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  font-size: 1.3rem;
 }
 
-.search button img{
-   width: 2rem;
+.search button img {
+  width: 2rem;
 }
 
-.temp-details{
-  
-  display: inline-flex; 
+.temp-details {
+  display: flex;
   align-items: center;
-  padding: .5rem;
+  padding: 0.5rem;
   position: relative;
-
 }
-.primary-div{
+.primary-div {
+  display: flex;
+  border-right: 2px solid white;
+
+  /* flex-direction: column; */
+}
+
+.my-inner {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  /* border: 2px solid red; */
 }
 
-.temp{
+.temp {
   display: inline-block;
   /* border: 2px solid white; */
   color: white;
   font-size: 8rem;
 }
 
-  #img1{
-    width: 14rem;
-
+#img1 {
+  width: 40%;
+  object-fit: cover;
 }
 @keyframes rotate2 {
-  
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(380deg);
   }
-    
-  }
-
-.city1{
-  display: inline-block;
-  color: white;
-  font-size: 4rem;
-
-  
 }
 
+.city1 {
+  /* display: inline-block; */
+  color: white;
+  font-size: 4rem;
+  white-space: nowrap;
+}
 
-.vertical-line{
+.vertical-line {
   height: 18rem;
   width: 1rem;
   border-left: 3px solid rgb(169, 169, 169);
-  position: absolute;
+  /* position: absolute; */
   left: 36rem;
   /* top:21rem; */
 }
 .multi-div {
   /* border: 1px solid red; */
-  
+
   width: 100%;
- 
+
   /* bottom: 0vh; */
-  background-color: #4E4E4E;
+  background-color: #4e4e4e;
   display: flex;
   padding: 1.4rem 1rem;
 }
-.left-div{
+.left-div {
   /* border: 1px solid red; */
   /* height: 100%; */
 }
-.right-div{
+.right-div {
   /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   width: 100%;
-  
-  
 }
-.Upcoming-info{
+.Upcoming-info {
   color: white;
   font-size: 3rem;
   text-align: center;
-  
 }
 
-
-#img2{
+#img2 {
   width: 5rem;
   /* border: 1px solid red; */
- 
-} 
+}
 
-#img3{
+#img3 {
   width: 4.8rem;
 }
-.humidity-div h3{
+.humidity-div h3 {
   text-align: center;
   /* border: 1px solid white; */
   width: 100%;
   color: white;
 }
-.windspeed-div h3{
+.windspeed-div h3 {
   text-align: center;
   /* border: 1px solid white; */
   width: 100%;
-  
+
   color: white;
 }
 
-.humidity-div , .windspeed-div  {
+.humidity-div,
+.windspeed-div {
   border: 1px solid rgb(145, 145, 145);
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   width: 23rem;
   display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-  
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   font-size: 2rem;
   margin-left: 3rem;
-  
-  height: 10rem;
- 
 
+  height: 10rem;
 }
-.windspeed-div{
-  margin-top: .8rem;  
+.windspeed-div {
+  margin-top: 0.8rem;
 }
-.humidity, .wind{
+.humidity,
+.wind {
   width: 50%;
-  
+
   /* border: 1px solid red; */
 }
 
-.images1{
+.images1 {
   /* border: 1px solid red; */
   display: inline-block;
-  
-  
 }
 
-
-.partition{
-margin-top: .5rem;
+.partition {
+  margin-top: 0.5rem;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   color: white;
-  text-align: center;
+  text-align: right;
 }
 
-#forecastWeather{
+#forecastWeather {
   /* border:2px solid white; */
   justify-content: space-evenly;
- display: flex;
- margin-top: 3rem;
- flex-wrap: wrap;
- gap: 1rem;
-
+  display: flex;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-div.weather-card{
- 
- background-color: rgb(255, 255, 255);
-   width: 15rem;
-   height: 13rem;  
-   display: flex;
-   flex-direction: column;
-   border-radius: 1.3rem;
-   align-items: center;
-   justify-content: center;
-   color: black;
-   font-size: 1.8rem;
-   font-weight: bold;
+div.weather-card {
+  background-color: rgb(255, 255, 255);
+  width: 15rem;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
-
-.display-date{
+.display-date {
   color: white;
   position: absolute;
   top: 0;
-  left:35%;
-
+  left: 35%;
+}
+.new {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: auto;
+}
+#suggestion {
+  color: white;
+  background-color: rgb(38, 0, 255);
+  margin-left: 10px;
+  font-size: 2rem;
 }
 
-@media(max-width:450px) {
-  *{
+#w-info {
+  color: white;
+  background-color: rgb(255, 0, 0);
+  align-self: flex-start;
+  /* text-align: center; */
+  font-size: 4rem;
+  margin-left: 10px;
+  margin: auto;
+}
+@media (max-width: 450px) {
+  * {
     /* border: 1px solid red; */
   }
-  body{
+  body {
     height: 100%;
   }
-  html{
+  html {
     font-size: 45%;
   }
 
-  #location-button{
+  #location-button {
     width: 100%;
     position: absolute;
-    top: 56rem;
+    top: 63rem;
   }
 
-  .search{
+  .search {
     width: 80%;
     align-items: center;
     margin-bottom: 4rem;
   }
 
-  .search button img{
+  .search button img {
     width: 2rem;
   }
-  .search button{
+  .search button {
     width: 4rem;
     height: 4rem;
     font-size: 1.2rem;
   }
-  .search input{
+  .search input {
     width: 78%;
   }
-  .vertical-line{
+  .vertical-line {
     display: none;
   }
 
-  .temp-details{
+  .temp-details {
     width: 100%;
 
-   flex-direction: column-reverse;
-   text-align: center;
-   margin-bottom: 7rem;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 7rem;
   }
 
-  .multi-div{
+  .multi-div {
     display: block;
     /* height: 100%; */
   }
 
-  .left-div{
+  .left-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 3rem;
-   
   }
 
-  .humidity-div{
-    margin: 0;
-   
-
-  }
-
-  .windspeed-div{
+  .humidity-div {
     margin: 0;
   }
 
-  div.weather-card{
- 
+  .windspeed-div {
+    margin: 0;
+  }
+
+  div.weather-card {
     background-color: rgb(255, 255, 255);
-      width: 100%;
-      height: 11rem;  
-      display: flex;
-      flex-direction: row;
-      border-radius: 1.3rem;
-      align-items: center;
-      justify-content: space-around;
-      color: black;
-      font-size: 2.5rem;
-      font-weight: bold;
-   }
-
-   .Upcoming-info {
+    width: 100%;
+    height: 11rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1.3rem;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    font-size: 2.5rem;
     font-weight: bold;
-   }
+  }
 
+  .Upcoming-info {
+    font-weight: bold;
+  }
+  .primary-div {
+    border: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .background {
+    height: 70rem;
+  }
 }
 
 /* marquee{
@@ -414,127 +416,114 @@ div.weather-card{
 } */
 
 @media (min-width: 451px) and (max-width: 850px) {
- 
-
-  *{
+  * {
     /* border: 1px solid red; */
   }
-  body{
+  body {
     /* height: 100%; */
   }
-  html{
+  html {
     font-size: 48%;
   }
-  #logo{
+  #logo {
     /* border: 1px solid red; */
     width: 6rem;
     /* height: 96%;     */
   }
-  .head{
-
-    
+  .head {
     /* font-size: 3rem; */
   }
-  
-  
-  
-  #greetings{
-    font-size: 3rem; 
+
+  #greetings {
+    font-size: 3rem;
     position: absolute;
     width: 100%;
     text-align: center;
     top: 7rem;
     /* color: rgb(25, 0, 255); */
   }
-  .multi-div{
+  .multi-div {
     /* position: relative;
     bottom: 0; */
     /* height: 100%; */
+    flex-direction: column;
   }
-  
 
- 
-  .search{
+  .search {
     width: 65%;
     margin-bottom: 2rem;
   }
-  .vertical-line{
+  .vertical-line {
     display: none;
   }
-  .temp-details{
+  .primary-div {
+    border: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .temp-details {
     width: 100%;
     align-items: center;
     justify-content: center;
     /* display: block; */
     display: flex;
-
+    flex-direction: column;
+    gap: 10px 0;
   }
-  #img1{
+  #img1 {
     margin-left: 0.5rem;
   }
-  .background{
-    height: 71.3rem;
+  .background {
+    height: 64.3rem;
   }
 
-  .left-div{
-    position: fixed;
+  .left-div {
+    /* position: fixed; */
     /* top: 5rem; */
     bottom: 44rem;
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-around;
     gap: 1rem;
+    /* margin-bottom: 10px; */
   }
-  .humidity-div , .windspeed-div  {
+  .humidity-div,
+  .windspeed-div {
     margin-left: 0;
     /* width: 20rem; */
-    border: none;
+    /* border: none; */
   }
-  .windspeed-div{
+  .windspeed-div {
     margin-top: 0;
   }
-  #forecastWeather{
-
-   flex-wrap: nowrap;
-   /* gap: 0; */
-   
-  
+  #forecastWeather {
+    flex-wrap: nowrap;
+    /* gap: 0; */
   }
-  div.weather-card{
- 
-    
-      width: 14rem;
-      height: 13rem;  
-      
-   }
-
-  
+  div.weather-card {
+    width: 14rem;
+    height: 13rem;
+  }
 }
 
-@media (min-width: 850px) and (max-width: 1080px){
-  .multi-div{
+@media (min-width: 850px) and (max-width: 1080px) {
+  .multi-div {
     gap: 1rem;
   }
-  #forecastWeather{
+  #forecastWeather {
     /* width: 90%; */
     /* border: 1px solid wheat; */
     /* justify-content: space-between; */
     /* flex-wrap: nowrap; */
     margin-top: 4.5rem;
   }
-  div.weather-card{
- 
-    
+  div.weather-card {
     width: 10.5rem;
-    height: 11rem;  
-    
- }
- .humidity-div , .windspeed-div  {
-  margin-left: 0;
-  
+    height: 11rem;
+  }
+  .humidity-div,
+  .windspeed-div {
+    margin-left: 0;
+  }
 }
-
-
-}
-
