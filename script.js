@@ -40,7 +40,7 @@ async function checkWeather(city) {
       } else {
         suggestion.innerText = "No suggestion available";
       }
-    }, 1000);
+    }, 1500);
     document.querySelectorAll(".city1")[0].innerHTML = data.name;
     document.querySelector(".temp").innerHTML =
       Math.round(data.main.temp) + "°c";
